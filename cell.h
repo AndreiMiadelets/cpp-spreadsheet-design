@@ -19,7 +19,7 @@ public:
   Value GetValue() const override;
   std::string GetText() const override;
 
-  std::unordered_set<Position> GetParentsCells() const;
+  std::unordered_set<Position> GetParentCells() const;
   std::unordered_set<Position> GetChildrenCells() const;
   bool IsReferenced() const;
   void ClearCache();

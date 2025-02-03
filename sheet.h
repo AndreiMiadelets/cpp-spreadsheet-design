@@ -8,7 +8,7 @@
 class Sheet : public SheetInterface {
 public:
   using CellInterfacePtr = std::unique_ptr<CellInterface>;
-  using Table = std::vector<std::vector<CellInterfacePtr>>;
+  using Table = std::unordered_map<Position, CellInterfacePtr>;
 
   ~Sheet() override = default;
 
